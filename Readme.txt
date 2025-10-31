@@ -1,19 +1,14 @@
-Overview
-
+Overview:
 Modular AI pipeline for crop-yield prediction: preprocessing → EDA → feature selection under uncertainty (RFE) → model training/validation → explainability (permutation importance / SHAP-style).
 Scopes: precision agriculture, AI for sustainability, intelligent systems for rural development.
-
 Main notebook: Data_Driven_Analysis_of_Growth_Factors_in_Oyster_Mushroom_Cultivation_A_Case_Study_from_Indonesia’s_Market.ipynb
-
 Reproducibility: fixed seeds, pinned deps, deterministic steps.
 
 
 Please follow step-by-step as follows:
 
 1) Open the project in Colab
-
 Go to Google Colab → File → Open notebook → GitHub.
-
 Paste your repo URL and open the main notebook:
 Data_Driven_Analysis_of_Growth_Factors_in_Oyster_Mushroom_Cultivation_A_Case_Study_from_Indonesia’s_Market.ipynb
 
@@ -36,22 +31,16 @@ if "src" not in sys.path:
 print("Colab environment ready.")
 
 3) Add your data
-
 In the left Files panel → upload your CSV to data/raw/
 (e.g., data/raw/oyster_market_indonesia.csv).
 
 4) Run the pipeline
-
 From the Colab menu: Runtime → Run all (or run cells top-to-bottom).
-
 The notebook will preprocess data, select features (RFE), train models, and generate figures/metrics.
 
 5) View & save outputs
-
 Cleaned/processed data → data/interim/, data/processed/
-
 Trained models → models/
-
 Figures/reports (if generated) → outputs/
 
 (Optional) Make results persistent in Google Drive
@@ -64,9 +53,6 @@ drive.mount('/content/drive')
 
 
 Notes
-
 The target (yield) and feature mapping are set inside the notebook—adjust if your column names differ.
-
 Random seeds are fixed for reproducibility.
-
 If imports from src/ fail, re-run the setup cell to ensure src is on sys.path.
